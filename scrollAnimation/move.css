@@ -1,0 +1,95 @@
+.move-right,
+.move-left,
+.move-up,
+.move-down {
+	position: relative;
+	height: 1000px;
+}
+
+.move-arrow {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	margin-left: -159px;
+	z-index: 10:;
+}
+
+.move-right img {
+	transform: rotate(180deg);
+}
+
+.move-up img {
+	transform: rotate(90deg);
+	margin-top: 79px;
+}
+
+.move-down img {
+	transform: rotate(270deg);
+	margin-top: 79px;
+}
+
+.move-right {
+	background: #000000;
+}
+
+.move-left {
+	background: #111111;
+}
+
+.move-up {
+	background: #222222;
+}
+
+.move-down {
+	background: #333333;
+}
+
+.dotP span {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	position: fixed;
+	top: 50%;
+	background: yellow;
+}
+
+@-webkit-keyframes moveRight {
+	0% {left: 0;}
+	100% {left: 100%;}
+}
+
+.startMoveRight {
+	animation: moveRight 5s ease -2s infinite;
+}
+
+@-webkit-keyframes moveLeft {
+	0% {left: 100%;}
+	100% {left: 0;}
+}
+
+.startMoveLeft {
+	animation: moveLeft 5s ease -2s infinite;
+}
+
+@-webkit-keyframes moveUp {
+	0% { top: 100%;}
+	100% { top: 0;}
+}
+
+.startMoveUp {
+	left: 50%;
+	margin-left: -100px;
+	animation: moveUp 5s ease -2s infinite;
+}
+
+@-webkit-keyframes moveDown {
+	0% { top: 0;}
+	100% { top: 100%;}
+}
+
+.startMoveDown {
+	left: 50%;
+	margin-left: -100px;
+	animation: moveDown 5s ease -2s infinite;
+}
